@@ -32,6 +32,7 @@ If you don't know how to do that temporarily, please use following command to ru
 
 ```bash
 docker run -p 6379:6379 --name dot_redis redis:4-alpine
+```
 
 ## Configuration
 
