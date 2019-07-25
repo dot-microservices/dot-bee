@@ -57,7 +57,7 @@ removes everything about existing queues from redis
 ## Client Methods
 
 - **.acceptServices(services, [options]):** accepts existing services to send jobs
-- **.acceptServices(services, [options]):** accepts an existing service to send jobs
+- **.acceptService(service, [options]):** accepts an existing service to send jobs
 - **.forward(service, method, data, [options]):** sends a new job to an existing service
 - **.send(service, method, data, [options]):** sends a new job to an existing service and retrieves its response
 - **.close():** stops all existing queues for a clean shutdown
