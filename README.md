@@ -47,7 +47,7 @@ please see more details at [Bee Queue Job Settings](https://github.com/bee-queue
 
 - **.addServices(services, concurrency = 1, [options]):**
 adds list of services and automatically creates their queues and consumers
-- **.addServices(service, concurrency = 1, [options]):**
+- **.addService(service, concurrency = 1, [options]):**
 adds a new service and automatically creates related queue and its consumer
 - **.close():**
 stops all existing queues for a clean shutdown
