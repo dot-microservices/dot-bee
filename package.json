@@ -1,6 +1,6 @@
 {
   "name": "dot-bee",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "description": "a bee-queue based minimalist toolkit for building fast, decentralized, scalable and fault tolerant microservices",
   "keywords": [
     "bee",

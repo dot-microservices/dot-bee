@@ -9,7 +9,7 @@ major difference from other [dot-rest](https://github.com/Dvs-Bilisim/dot-rest) 
 it works on top of a redis-based solid message queue called [bee-queue](https://github.com/bee-queue/bee-queue).
 because of that, [clerq](https://github.com/Dvs-Bilisim/clerq) based service discovery is out of the architecture.
 
-on the other hand, unlike dot-bee, original [dot](https://github.com/Dvs-Bilisim/dot) has auto service discovery feature and
+on the other hand, original [dot](https://github.com/Dvs-Bilisim/dot) has auto service discovery feature and
 because of its dependencies, it has completely different use cases.
 
 ## Install
