@@ -46,8 +46,10 @@ class Client extends Base {
         if (is.not.string(service)) throw new Error('invalid service');
         if (is.not.object(options)) throw new Error('invalid options');
 
-        if (is.not.existy(this._services[service]))
+        if (is.not.existy(this._services[service])) {
             this._services[service] = new Queue(service, options);
+            this._logger.info(`${ service }|client`);
+        } else this._logger.warn(`${ service }|exists`);
     }
 
     /**
@@ -74,6 +76,8 @@ class Client extends Base {
                 if (is.array(options[config])) job[config](...options[config]);
                 else job[config](options[config]);
         await job.save();
+        if (this._logger.isLevelEnabled('info'))
+            this._logger.info(`${ service }|${ method }|C|${ JSON.stringify(data) }`);
         return job;
     }
 

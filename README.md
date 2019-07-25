@@ -72,8 +72,8 @@ class Service {
         return 'myService';
     }
 
-    static async echo(req) { // ? , res
-        return req.params;
+    static async echo(job) {
+        return job.data;
     }
 }
 
